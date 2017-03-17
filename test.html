@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8/>
+<meta name="viewport" content="width=device-width"/>
+<title>Vue-test</title>
+</head>
+<body>
+
+	<div id="app1">
+		<div v-html="message"></div>
+	</div>
+	<div id="app2">
+		{{message}}
+	</div>
+	<div id="app3">
+		<div v-bind:title="message">stay seconds on me</div>
+	</div>
+	<div id="app4">
+		<div v-if="seen">stay seconds on me</div>
+	</div>
+	<div id="app5">
+		<ol>
+			<li v-for="todo in todos">
+				{{todo.text}}
+			</li>
+		</ol>
+	</div>
+	
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="./test.js"></script>
+</body>
+</html>
